@@ -16,7 +16,42 @@ console.log(9 * a);
 let b = 7 * a;
 console.log(b)
 /* 5 */
-const MAX=57;
-const ACTUAL=MAX-13;
-const PERCENTAGE=ACTUAL/MAX;
+const MAX = 57;
+const ACTUAL = MAX - 13;
+const PERCENTAGE = ACTUAL / MAX;
 console.log(PERCENTAGE);
+
+/* 1 */
+function add7(number1) {
+  sum = number1 + 7;
+  return sum;
+}
+
+let value3 = add7(value1);
+console.log(value3);
+
+/* 2 */
+function multiply(number1, number2) {
+  product = number1 * number2;
+  return product;
+}
+
+console.log(multiply(value1, value2));
+
+/* 3 */
+function capitalize(string1) {
+  firstLetter = string1.slice(0, 1);
+  firstLetter = firstLetter.toUpperCase(firstLetter);
+  restOfString = string1.substring(1);
+  string1 = firstLetter + restOfString;
+  console.log(string1);
+}
+
+/* 4 */
+function lastLetter(string1) {
+  console.log(string1.slice(-1));
+}
+
+let myString = "smaTad";
+capitalize(myString);
+lastLetter(myString);
